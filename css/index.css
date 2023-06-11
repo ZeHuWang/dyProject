@@ -1,0 +1,40 @@
+
+html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+body{
+    height: 100%;
+}
+
+/* 左侧侧边栏 */
+.sideba {
+    background-color: rgb(6,7,22);
+    width: 172px;
+    height: 100%;
+    color: rgb(132,132,139);
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.sideba a{
+    color: rgb(132,132,139);
+    text-decoration: none; 
+}
+
+.element:hover{
+    color: rgb(242,242,243);
+}
+
+/* 侧边栏标题 */
+.sideba_title{
+    color: rgb(242,242,243);
+}
+
+.list .element{
+    height: 45px;
+    line-height: 45px;
+}
+
