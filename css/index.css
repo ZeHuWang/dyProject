@@ -10,27 +10,41 @@ body{
 
 /* 左侧侧边栏 */
 .sideba {
+    /* 设置背景颜色 */
     background-color: rgb(6,7,22);
+    /* 设置长宽 */
     width: 172px;
     height: 100%;
+    /* 设置前景色 */
     color: rgb(132,132,139);
+    /* 设置字体大小 */
     font-size: 16px;
+    /* 文字居中 */
     text-align: center;
+    /* 字体加粗 */
     font-weight: bold;
 }
 
+/* 侧边栏下的a标签 */
 .sideba a{
     color: rgb(132,132,139);
+    /* 取消下划线 */
     text-decoration: none; 
+    /* 开启浮点 */
     display: flex;
+    /* 居中 */
     justify-content: center;
 }
 
+/* 侧边栏下的图标 */
 .sideba .icon{
+    /* 垂直居中 */
     line-height: 45px;
+    /* 设置间距 */
     margin-right: 5px;
 }
 
+/* 鼠标移入效果 */
 .element a:hover{
     color: rgb(242,242,243);
 }
