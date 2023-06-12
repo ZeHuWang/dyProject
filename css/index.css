@@ -22,15 +22,35 @@ body{
 .sideba a{
     color: rgb(132,132,139);
     text-decoration: none; 
+    display: flex;
+    justify-content: center;
 }
 
-.element:hover{
+.sideba .icon{
+    line-height: 45px;
+    margin-right: 5px;
+}
+
+.element a:hover{
     color: rgb(242,242,243);
 }
 
 /* 侧边栏标题 */
 .sideba_title{
+    height: 80px;
     color: rgb(242,242,243);
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.sideba_title h1{
+    font-weight: bold;
+}
+
+.sideba_title .title_icon{
+    line-height: 85px;
+    margin-right: 5px;
 }
 
 .list .element{
@@ -38,3 +58,10 @@ body{
     line-height: 45px;
 }
 
+.list .line{
+    width: 70px;
+    height: 1px;
+    border: 1px;
+    background-color: rgba(128, 128, 128, 0.3);
+    margin: 20px auto;
+}
