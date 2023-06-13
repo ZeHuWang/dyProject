@@ -17,7 +17,7 @@ body{
     /* 设置背景颜色 */
     background-color: rgb(6,7,22);
     /* 设置长宽 */
-    width: 172px;
+    width: 215px;
     height: 100%;
     /* 设置前景色 */
     color: rgb(132,132,139);
@@ -27,6 +27,17 @@ body{
     text-align: center;
     /* 字体加粗 */
     font-weight: bold;
+    overflow-y: scroll;
+}
+
+/* .sideba .list{
+    height: 1000px;
+} */
+
+/* 隐藏滚动条 */
+.sideba::-webkit-scrollbar {  
+    width:0 !important;  
+    background: transparent;  
 }
 
 /* 侧边栏下的a标签 */
@@ -84,6 +95,51 @@ body{
     border: 1px;
     background-color: rgba(128, 128, 128, 0.3);
     margin: 20px auto;
+}
+
+.sideba .licence{
+    margin-top: 100px;
+}
+
+.sideba .licence,
+.sideba .net-inform{
+    width: 150px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.sideba .licence  a,
+.sideba .net-inform a{
+    font-size: 12px;
+    zoom: 0.83;
+    font-weight: 100;
+    text-align: left;
+    justify-content: left;
+    margin-top: 5px;
+    color: rgba(128, 128, 128, 0.5);
+}
+
+.sideba .line{
+    width: 150px;
+    height: 1px;
+    border: 1px;
+    background-color: rgba(128, 128, 128, 0.3);
+    margin: 10px 20px;
+}
+
+.sideba .feedback{
+    display: flex;
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+.sideba .feedback .feedback-left{
+    margin-right: 20px;
+}
+
+.sideba .feedback a{
+    justify-content: left;
+    margin-top: 10px;
 }
 
 /* 顶部导航栏 */
