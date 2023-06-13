@@ -165,7 +165,7 @@ body{
 
 .navigation .options .element{
     text-align: center;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 .navigation .options .element a{
@@ -224,12 +224,61 @@ body{
     position:absolute;
     top: 60px;
     z-index: 999;
+    color: rgb(187,187,190);
 }
 .search:hover .seachDropdownBox{
     display: block;
 }
 .search:hover a{
     background-color: #FFF;
-   color: black;
-   font-weight: bold;
+    color: black;
+    font-weight: bold;
+}
+
+.seachDropdownBox .like,
+.seachDropdownBox .hot{
+    margin: 15px;
+}
+
+.seachDropdownBox .title{
+    color: rgb(254,254,254);
+    font-weight: bold;
+    margin: 10px auto;
+}
+
+.seachDropdownBox .like .content{
+    display: flex;
+}
+
+.seachDropdownBox .like .content .options{
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 10px;
+}
+
+.seachDropdownBox .like .content .options:hover{
+    color: rgb(223,43,79);
+    background-color: rgb(65,66,76);
+    border-radius: 5px;
+}
+
+.seachDropdownBox .like-list-left{
+    margin-right: 50px;
+}
+
+.seachDropdownBox .like-list-left p:first-child,
+.seachDropdownBox .like-list-right p:first-child{
+    color: rgb(223,43,79);
+}
+
+.seachDropdownBox .hot-list .element{
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+.seachDropdownBox .hot-list .element:hover{
+    color: rgb(223,43,79);
+    background-color: rgb(65,66,76);
+    border-radius: 5px;
 }
