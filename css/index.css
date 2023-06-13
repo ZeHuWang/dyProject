@@ -235,50 +235,105 @@ body{
     font-weight: bold;
 }
 
-.seachDropdownBox .like,
-.seachDropdownBox .hot{
+.search .seachDropdownBox .like,
+.search .seachDropdownBox .hot{
     margin: 15px;
 }
 
-.seachDropdownBox .title{
+.search .seachDropdownBox .title{
     color: rgb(254,254,254);
     font-weight: bold;
     margin: 10px auto;
 }
 
-.seachDropdownBox .like .content{
+.search .seachDropdownBox .like .content{
     display: flex;
 }
 
-.seachDropdownBox .like .content .options{
+.search .seachDropdownBox .like .content .options{
     width: 150px;
     height: 30px;
     line-height: 30px;
     padding-left: 10px;
 }
 
-.seachDropdownBox .like .content .options:hover{
+.search .seachDropdownBox .like .content .options:hover{
     color: rgb(223,43,79);
     background-color: rgb(65,66,76);
     border-radius: 5px;
 }
 
-.seachDropdownBox .like-list-left{
+.search .seachDropdownBox .like-list-left{
     margin-right: 50px;
 }
 
-.seachDropdownBox .like-list-left p:first-child,
-.seachDropdownBox .like-list-right p:first-child{
+.search .seachDropdownBox .like-list-left p:first-child,
+.search .seachDropdownBox .like-list-right p:first-child{
     color: rgb(223,43,79);
 }
 
-.seachDropdownBox .hot-list .element{
+.search .seachDropdownBox .hot-list .element{
     margin-bottom: 10px;
     padding-left: 10px;
 }
 
-.seachDropdownBox .hot-list .element:hover{
+.search .seachDropdownBox .hot-list .element:hover{
     color: rgb(223,43,79);
     background-color: rgb(65,66,76);
     border-radius: 5px;
+}
+
+.navigation-middle .element{
+    position: relative;
+}
+
+/* 充抖币下拉框 */
+.navigation-middle .dropdownBox{
+    width: 220px;
+    height: 0;
+    overflow: hidden;
+    background-color: rgb(37,38,50);
+    border-radius: 5px;
+    position:absolute;
+    right: -90px;
+    z-index: 999;
+    color: rgb(187,187,190);
+    transition: height 0.5s;
+}
+
+.navigation-middle .dropdownBox-active:hover + .dropdownBox{
+    height: 120px;
+    display: block;
+    transition: height 0.5s;
+}
+.navigation-middle .dropdownBox:hover{
+    display: block;
+    height: 120px;
+}
+
+/* 充抖币下拉框文字居中 */
+.navigation-middle .dropdownBox .title,
+.navigation-middle .dropdownBox .content{
+    text-align: center;
+}
+
+/* 设置充抖币下拉框上下间距 */
+.navigation-middle .dropdownBox .title{
+    margin: 10px auto;
+}
+
+/* 设置充抖币下拉框字体颜色以及大小 */
+.navigation-middle .dropdownBox .content{
+    color: #FFF;
+    font-size: 18px;
+}
+
+.navigation-middle .dropdownBox a{
+    color: #fff;
+    background-color: rgb(254,44,85);
+    display: inline-block;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 21px;
 }
