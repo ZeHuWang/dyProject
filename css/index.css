@@ -393,3 +393,29 @@ body{
     line-height: 30px;
     margin-top: 21px;
 }
+
+/* 点赞，转发，收藏定位 */
+.suspension{
+    position: absolute;
+    top: 300px;
+    right: 200px;
+}
+
+.suspension .suspension-ele{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.suspension .suspension-ele a{
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.suspension .suspension-ele .icon{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+

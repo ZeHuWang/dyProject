@@ -232,5 +232,64 @@
         </div>
         
     </div>
+
+    <!-- 点赞，转发，收藏定位 -->
+    <div class="suspension">
+        <div class="suspension-ele">
+            <a class="like-active">
+                <div class="fa-solid fa-heart icon" id="like"></div>
+                <div class="font">10.9万</div>
+            </a>
+        </div>
+        <div class="suspension-ele">
+            <a href="">
+                <div class="fa-solid fa-star icon"></div>
+                <div class="font">3237</div>
+            </a>
+        </div>
+        <div class="suspension-ele">
+            <a href="">
+                <div class="fa-solid fa-comment-dots icon"></div>
+                <div class="font">2211</div>
+            </a>
+        </div>
+        <div class="suspension-ele">
+            <a href="">
+                <div class="fa-solid fa-share icon"></div>
+                <div class="font">1765</div>
+            </a>
+        </div>
+        <div class="suspension-ele">
+            <a href="">
+                <div class="fa-solid fa-ellipsis icon"></div>
+            </a>
+        </div>
+    </div>
+
+    <!-- js -->
+    <script type="text/javascript">
+        // 获取点赞图标元素
+        let like = document.getElementById('like');
+        // 获取其颜色样式
+        let style = window.getComputedStyle(like);
+        // 默认为激活
+        let likeActive = true
+        // 若不为激活，则改为未激活
+        if(style.color === 'rgb(255, 255, 255)'){
+            likeActive = false
+        }
+        like.onclick = function(){
+            if (!likeActive){
+                // 未激活
+                like.style.color = 'rgb(223,43,79)';
+                likeActive = true
+            } else{
+                // 激活
+                like.style.color = 'rgb(255,255,255)';
+                likeActive = false
+            }
+        }
+
+    </script>
 </body>
 </html>
