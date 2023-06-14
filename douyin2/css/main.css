@@ -1,0 +1,9 @@
+main > nav{
+    width: 957px;
+    height: 77px;
+    border-bottom: 2px solid;
+    border-color: rgba(35, 36, 47, 1);
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+}
