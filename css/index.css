@@ -440,6 +440,10 @@ body{
     color: rgb(48,48,53);
 }
 
+.loginBox .cancel a{
+    text-decoration: none;
+}
+
 /* 标题 */
 .loginBox .login-title{
     text-align: center;
@@ -486,7 +490,7 @@ body{
 }
 
 .loginBox .login-method .method a:hover{
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid red !important;
 }
 
 
