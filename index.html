@@ -251,25 +251,25 @@
             </a>
         </div>
         <div class="suspension-ele">
-            <a href="">
-                <div class="fa-solid fa-star icon"></div>
+            <a href="#">
+                <div class="fa-solid fa-star icon" id="collect"></div>
                 <div class="font">3237</div>
             </a>
         </div>
         <div class="suspension-ele">
-            <a href="">
+            <a href="#" class="collect-active">
                 <div class="fa-solid fa-comment-dots icon"></div>
                 <div class="font">2211</div>
             </a>
         </div>
         <div class="suspension-ele">
-            <a href="">
+            <a href="#">
                 <div class="fa-solid fa-share icon"></div>
                 <div class="font">1765</div>
             </a>
         </div>
         <div class="suspension-ele">
-            <a href="">
+            <a href="#">
                 <div class="fa-solid fa-ellipsis icon"></div>
             </a>
         </div>
@@ -355,6 +355,30 @@
                 likeActive = false
             }
         }
+
+        // 获取收藏图标元素
+        let collect = document.getElementById('collect');
+        // 获取其颜色样式
+        let collectStyle = window.getComputedStyle(collect);
+        // 默认为激活
+        let collectActive = true
+        // 若不为激活，则改为未激活
+        if(collectStyle.color === 'rgb(255, 255, 255)'){
+            collectActive = false
+        }
+        collect.onclick = function(){
+            if (!collectActive){
+                // 未激活
+                collect.style.color = 'orange';
+                collectActive = true
+            } else{
+                // 激活
+                collect.style.color = 'rgb(255,255,255)';
+                collectActive = false
+            }
+        }
+
+
 
         // 获取登录界面
         let loginBox = document.getElementById('loginBox');
