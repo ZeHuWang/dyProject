@@ -224,7 +224,7 @@
         
         <div class="navigation-right">
             <div class="login">
-                <a href="">
+                <a href="#" id="login">
                     <div class="fa-solid fa-circle-user icon"></div>
                     <span class="font">登录</span>
                 </a>
@@ -266,6 +266,44 @@
         </div>
     </div>
 
+    <!-- 登录界面 -->
+    <div class="loginBox" id="loginBox">
+        <div class="cancel" >
+            <div class="icon fa-sharp fa-solid fa-xmark" id="cancel"></div>
+        </div>
+        <div class="login-title">
+            登录后免费畅想高清视频
+        </div>
+        <div class="login-description">
+            <div>
+                <div class="fa-solid fa-heart icon"></div>
+                点赞评论随心发
+            </div>
+            <div class="middle">
+                <div class="fa-solid fa-user-group icon"></div>
+                直播间畅想打赏
+            </div>
+            <div>
+                <div class="fa-solid fa-video icon"></div>
+                朋友视频一键览
+            </div>
+        </div>
+        <div class="login-method">
+            <div class="method">
+                <a href="">扫描登录</a>
+                <a href="">验证码登录</a>
+                <a href="">密码登录</a>
+            </div>
+            <div class="image">
+                <img src="./img/tiktok.jpg" alt="">
+                <div class="font">
+                    打开<span>抖音APP</span>扫描二维码登录
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
     <!-- js -->
     <script type="text/javascript">
         // 获取点赞图标元素
@@ -290,6 +328,18 @@
             }
         }
 
+        // 获取登录界面
+        let loginBox = document.getElementById('loginBox');
+        // 获取登录按键
+        let login = document.getElementById('login');
+        login.onclick = function(){
+            loginBox.style.display = 'block';
+            return false;
+        }
+        let cancel = document.getElementById('cancel');
+        cancel.onclick = function(){
+            loginBox.style.display = 'none'
+        }
     </script>
 </body>
 </html>

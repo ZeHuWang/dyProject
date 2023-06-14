@@ -418,4 +418,95 @@ body{
     margin-bottom: 10px;
 }
 
+/* 登录界面 */
+.loginBox{
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 360px;
+    height: 368px;
+    border-radius: 5px;
+    transform: translate(-50%, -50%);
+    background-color: rgb(253,234,248);
+    padding: 10px;
+}
+
+/* 取消图标 */
+.loginBox .cancel {
+    display: flex;
+    justify-content: end;
+    margin-right: 10px;
+    color: rgb(48,48,53);
+}
+
+/* 标题 */
+.loginBox .login-title{
+    text-align: center;
+    font-size: 18px;
+    font-weight: bolder;
+    color: rgb(48,48,53);
+}
+
+/* 描述信息 */
+.loginBox .login-description{
+    width: 400px;
+    display: flex;
+    font-size: 14px;
+    zoom: 0.83;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.loginBox .login-description .middle{
+    margin: 0 18px;
+}
+
+/* 登录方式 */
+.loginBox .login-method{
+    width:300px;
+    height: 300px;
+    background-color: #fff;
+    margin: 0 auto;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.loginBox .login-method .method a:nth-child(2){
+    margin: 0 20px;
+}
+
+.loginBox .login-method .method a{
+    width: 75px;
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    color: rgb(22,24,35);
+    text-decoration: none;
+    border-bottom: 2px solid #fff;
+}
+
+.loginBox .login-method .method a:hover{
+    border-bottom: 2px solid red;
+}
+
+
+/* 二维码 */
+.loginBox .image img{
+    margin-top: 20px;
+    width: 150px;
+    height: 150px;
+}
+
+.loginBox .image .font{
+    margin-top: 20px;
+    font-size: 12px;
+    zoom: 0.83;
+    /* 字符之间的间距 */
+    letter-spacing: 3px;
+}
+
+.loginBox .image .font span{
+    color: red;
+    margin: auto 5px;
+}
 
