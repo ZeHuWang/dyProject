@@ -7,66 +7,137 @@
     <title>抖音</title>
     <!-- 重置样式表 -->
     <link rel="stylesheet" href="./css/normalize.css">
-    <!-- 首页css样式 -->
-    <link rel="stylesheet" href="css/index.css">
+    <!-- 总体与左侧css样式 -->
+    <link rel="stylesheet" href="./css/left.css">
+    <!-- 网页主题css样式 -->
+    <link rel="stylesheet" href="./css/main.css">
     <!-- 图标样式 -->
-    <link rel="stylesheet" href="icon/css/all.css">
+    <link rel="stylesheet" href="./icon/iconfont/iconfont.css">
     
 </head>
 <body>
     <!-- 左侧侧边栏 -->
-    <nav class="sideba">
+    <aside class="sideba">
         <!-- 侧边栏标题 -->
-        <div class="sideba_title">
-            <img src=""/>
-            <h1>抖音</h1>
-        </div>
+        <h1 class="sideba_title">
+            <img src="./img/抖音.png">
+            <!-- 上外边距设0 -->
+            <span>抖音</span>
+        </h1>
         <!-- 侧边选项列表 -->
         <div class="list">
             <!-- 各个选项 -->
-            <div class="element">
-                <i class="fa-solid fa-house"></i>
-                <a class="font" href="">首页</a>
-            </div>
-            <div class="element">
-                <div class="icon"></div>
-                <a class="font" href="">首页</a>
-            </div>
-            <div class="element">
-                <div class="icon"></div>
-                <a class="font" href="">首页</a>
-            </div>
-            <div class="element">
-                <div class="icon"></div>
-                <a class="font" href="">首页</a>
-            </div>
-            <div class="element">
-                <div class="icon"></div>
-                <a class="font" href="">首页</a>
-            </div>
-            <hr/>
-            <div class="element">
-                <div class="icon"></div>
-                <a class="font" href="">首页</a>
-            </div>
-            <div class="element">
-                <div class="icon"></div>
-                <a class="font" href="">首页</a>
-            </div>
-            <div class="element">
-                <div class="icon"></div>
-                <a class="font" href="">首页</a>
-            </div>
-            <div class="element">
-                <div class="icon"></div>
-                <a class="font" href="">首页</a>
-            </div>
-            <div class="element">
-                <div class="icon"></div>
-                <a class="font" href="">首页</a>
-            </div>
+            <a class="element">
+                <div>
+                    <text  class="iconfont icon-shouye" ></text>
+                    <span class="font">首页</span>
+                </div>
+            </a>
+            <a class="element">
+                <div>
+                    <text  class="iconfont icon-tuijian" ></text>
+                    <span class="font">推荐</span>
+                </div>
+            </a>
+            <a class="element">
+                <div>
+                    <text  class="iconfont icon-guanzhu" ></text>
+                    <span class="font">关注</span>
+                </div>
+            </a>
+            <a class="element">
+                <div>
+                    <text  class="iconfont icon-pengyou" ></text>
+                    <span class="font">朋友</span>
+                </div>
+            </a>
+            <a class="element">
+                <div>
+                    <text  class="iconfont icon-wode" ></text>
+                    <span class="font">我的</span>
+                </div>
+            </a>
+            <div class="line"></div>
+            <a class="element">
+                <div>
+                    <text  class="iconfont icon-sheyingji" ></text>
+                    <span class="font">直播</span>
+                </div>
+            </a>
+            <a class="element">
+                <div>
+                    <text  class="iconfont icon-tv" ></text>
+                    <span class="font">放映厅</span>
+                </div>
+            </a>
+            <a class="element">
+                <div>
+                    <text  class="iconfont icon-redian" ></text>
+                    <span class="font">热点</span>
+                </div>
+            </a>
+            <a class="element">
+                <div>
+                    <text  class="iconfont icon-airudiantubiaohuizhi-zhuanqu_youxi" ></text>
+                    <span class="font">游戏</span>
+                </div>
+            </a>
+            <a class="element">
+                <div>
+                    <text  class="iconfont icon-xiaolian" ></text>
+                    <span class="font">娱乐</span>
+                </div>
+            </a>
+            <a class="element">
+                <div>
+                    <text  class="iconfont icon-erciyuan" ></text>
+                    <span class="font">二次元</span>
+                </div>
+            </a>
+            <a class="element">
+                <div>
+                    <text  class="iconfont icon-yinle" ></text>
+                    <span class="font">音乐</span>
+                </div>
+            </a>
+            <a class="element">
+                <div>
+                    <text  class="iconfont icon-meishi" ></text>
+                    <span class="font">美食</span>
+                </div>
+            </a>
+            <a class="element">
+                <div>
+                    <text  class="iconfont icon-airudiantubiaohuizhi-zhuanqu_tiyushijie" ></text>
+                    <span class="font">体育</span>
+                </div>
+            </a>
+            <a class="element">
+                <div>
+                    <text  class="iconfont icon-fushishishang" ></text>
+                    <span class="font">时尚</span>
+                </div>
+            </a>
         </div>
-    </nav>
-    
+    </aside>
+    <!-- 网页主体 -->
+    <main>
+        <!-- 顶部导航栏 -->
+        <nav>
+            <div class="navigation-left">
+                <div class="search">
+                    <form action="">
+                        <input type="text" name="" id="" placeholder="抖音，记录美好生活">
+                        <a href="">
+                            <div class="fa-solid fa-magnifying-glass icon"></div>
+                            <span>搜索</span>
+                        </a>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- 中间内容 -->
+        <article></article>
+    </main>
 </body>
 </html>

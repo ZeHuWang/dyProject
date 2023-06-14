@@ -1,17 +1,24 @@
-
-html{
+*{
     margin: 0;
     padding: 0;
+}
+html{
     height: 100%;
 }
+
 body{
     height: 100%;
+    background-color: rgb(22,24,35);
+    display: flex;
+}
+aside,main{
+    float: left;
 }
 
 /* 左侧侧边栏 */
 .sideba {
     background-color: rgb(6,7,22);
-    width: 172px;
+    width: 215px;
     height: 100%;
     color: rgb(132,132,139);
     font-size: 16px;
@@ -22,6 +29,7 @@ body{
 .sideba a{
     color: rgb(132,132,139);
     text-decoration: none; 
+    
 }
 
 .element:hover{
@@ -32,9 +40,28 @@ body{
 .sideba_title{
     color: rgb(242,242,243);
 }
-
+/* 侧边栏下列的属性 */
 .list .element{
     height: 45px;
     line-height: 45px;
 }
+aside > h1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    vertical-align: middle;
+}
+aside > h1>img{
+    vertical-align: middle;
+    width:50px;
+}
+.element text{
+    font-size:20px!important;
+}
 
+.list .line{
+    width: 150px;
+    height: 1px;
+    border: 1px;
+    background-color: rgba(128, 128, 128, 0.3);
+    margin: 20px auto;
+}
