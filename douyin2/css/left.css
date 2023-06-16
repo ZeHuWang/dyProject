@@ -15,8 +15,12 @@ aside,main{
     float: left;
 }
 
+main .navigation-left form{
+    display: flex;
+}
+
 /* 左侧侧边栏 */
-.sideba {
+.side {
     background-color: rgb(6,7,22);
     width: 215px;
     height: 100%;
@@ -26,18 +30,18 @@ aside,main{
     font-weight: bold;
 }
 
-.sideba a{
+.side a{
     color: rgb(132,132,139);
     text-decoration: none; 
     
 }
 
-.element:hover{
+.list>a>div>text:hover,.list>a>div>span:hover{
     color: rgb(242,242,243);
 }
 
 /* 侧边栏标题 */
-.sideba_title{
+.side_title{
     color: rgb(242,242,243);
 }
 /* 侧边栏下列的属性 */
