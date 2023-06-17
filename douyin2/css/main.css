@@ -13,20 +13,20 @@ main > nav{
 
 
 /* 顶部导航栏左侧 */
-.navigation-left{
+.nav-left{
     width: 60%;
     display: flex;
     justify-content: right;
 }
 /* 边框 */
-.navigation-left .search{
+.nav-left .search{
     width: 428px;
     height: 40px;
     border: 2px solid rgb(186,186,189);
     border-radius: 5px;
 }
 /* 文本框样式 */
-.navigation-left .search input{
+.nav-left .search input{
     width: 75%;
     height: 40px;
     background: none;
@@ -39,8 +39,8 @@ main > nav{
     line-height: 40px;
 }
 /* 右侧搜索图标样式 */
-.navigation-left .search a{
-    width: 20%;
+.nav-left .search a{
+    width: 21%;
     height: 100%;
     line-height: 40px;
     border: none;
@@ -50,11 +50,11 @@ main > nav{
     display: inline-block;
     font-size: 16px;
     font-weight: bold;
-    margin-left: 11px;
+    margin-left: 2px;
     
 }
 /* 取消边框下划线 */
-.navigation-left .search input:focus{
+.nav-left .search input:focus{
     border: none;
     outline: none;
 }
@@ -65,14 +65,14 @@ main > nav{
     color: black;
    font-weight: bold;
 }
-.navigation-left .search a:hover,
-.navigation-left .search form:hover > a{
+.nav-left .search a:hover,
+.nav-left .search form:hover > a{
    background-color: #FFF;
    color: black;
    font-weight: bold;
 }
 
-.navigation-left .search:hover{
+.nav-left .search:hover{
     border-color: rgb(232,232,233);
 }
 .search > .xiala{
@@ -122,44 +122,44 @@ main > nav{
     border-radius: 5px;
 }
 /* 抖音热点样式 */
-.search .xiala .hot-list .element{
+.search .xiala .hot-list .unit{
     margin-bottom: 10px;
     padding-left: 10px;
 }
 
-.search .xiala .hot-list .element:hover{
+.search .xiala .hot-list .unit:hover{
     color: rgb(223,43,79);
     background-color: rgb(65,66,76);
     border-radius: 5px;
 }
 
 /* 中间导航栏 */
-.navigation-middle{
+.nav-middle{
     width: 30%;
     display: flex;
-    justify-content: left;
+    justify-content: right;
 }
 
-.navigation-middle .options{
+.nav-middle .options{
     display: flex;
 }
 
-nav .options .element{
+nav .options .unit{
     text-align: center;
     margin-right: 10px;
 }
 
-nav .options .element a{
+nav .options .unit a{
     text-decoration: none;
 }
 
-nav .options .element .icon, 
-nav .options .element .font{
+nav .options .unit .icon, 
+nav .options .unit .font{
     color: rgb(185,185,189);
 }
 
 
-nav .options .element a:hover > .icon,
-nav .options .element a:hover > .font{
+nav .options .unit a:hover > .icon,
+nav .options .unit a:hover > .font{
     color: #FFF;
 }
