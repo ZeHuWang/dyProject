@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="./css/article.css">
     <!-- 图标样式 -->
     <link rel="stylesheet" href="./icon/iconfont/iconfont.css">
+    <link rel="stylesheet" href="./css/icon/css/all.css">
+    <!-- 登录界面样式 -->
+    <link rel="stylesheet" href="./css/login.css">
 
 </head>
 
@@ -314,6 +317,100 @@
             </script>
         </article>
     </main>
+
+    <div class="loginBox" id="loginBox">
+        <div class="cancel" >
+            <a href="#" class="icon fa-sharp fa-solid fa-xmark" id="cancel"></a>
+        </div>
+        <div class="login-title">
+            登录后免费畅想高清视频
+        </div>
+        <div class="login-description">
+            <div>
+                <div class="fa-solid fa-heart icon"></div>
+                点赞评论随心发
+            </div>
+            <div class="middle">
+                <div class="fa-solid fa-user-group icon"></div>
+                直播间畅想打赏
+            </div>
+            <div>
+                <div class="fa-solid fa-video icon"></div>
+                朋友视频一键览
+            </div>
+        </div>
+        <div class="login-method">
+            <div class="method">
+                <a href="#" id="scan-login">扫码登录</a>
+                <a href="#" id="verification-login">验证码登录</a>
+                <a href="#" id="passworrd-login">密码登录</a>
+            </div>
+            <!-- 扫描登录 -->
+            <div class="image" id="scanBox">
+                <img src="./img/tiktok.jpg" alt="">
+                <div class="font">
+                    打开<span>抖音APP</span>扫描二维码登录
+                </div>
+            </div>
+            <!-- 密码登录 -->
+            <div class="phoneLogin" id="passwordBox">
+                <form action="">
+                    <div class="phone">
+                        <span>+86</span>
+                        <input type="text" placeholder="手机号">
+                    </div>
+                    <div class="inputPassword">
+                        <input type="text" placeholder="请输入密码">
+                        <span>忘记密码</span>
+                    </div>
+                    <div class="agreement">
+                        <span>同意</span><a href="#">用户协议</a><span>和</span><a href="#">隐私协议</a>
+                    </div>
+                    <div class="login">
+                        <a href="#">登录</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+         // 获取登录界面
+         let loginBox = document.getElementById('loginBox');
+        // 扫描登录按键
+        let scanLogin = document.getElementById('scan-login');
+        // 扫描登录界面
+        let scanBox = document.getElementById('scanBox');
+        // 密码登录按键
+        let passworrdLogin = document.getElementById('passworrd-login');
+        // 密码登录界面
+        let passwordBox = document.getElementById('passwordBox');
+        // 获取登录按键
+        let login = document.getElementById('login');
+        login.onclick = function(){
+            loginBox.style.display = 'block';
+            scanBox.style.display = 'block';
+            passwordBox.style.display = 'none';
+            passworrdLogin.style.borderBottom = '2px solid white';
+            scanLogin.style.borderBottom = '2px solid red';
+            return false;
+        }
+        let cancel = document.getElementById('cancel');
+        cancel.onclick = function(){
+            loginBox.style.display = 'none'
+        }
+        scanLogin.onclick = function(){
+            passwordBox.style.display = 'none';
+            scanBox.style.display = 'block';
+            passworrdLogin.style.borderBottom = '2px solid white';
+            scanLogin.style.borderBottom = '2px solid red';
+        }
+        passworrdLogin.onclick = function(){
+            scanBox.style.display = 'none';
+            passwordBox.style.display = 'block';
+            scanLogin.style.borderBottom = '2px solid white';
+            passworrdLogin.style.borderBottom = '2px solid red'; 
+        }
+    </script>
 </body>
 
 </html>

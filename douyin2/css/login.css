@@ -1,0 +1,171 @@
+/* 登录界面 */
+.loginBox{
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 360px;
+    height: 368px;
+    border-radius: 5px;
+    transform: translate(-50%, -50%);
+    background-color: rgb(253,234,248);
+    padding: 10px;
+}
+
+/* 取消图标 */
+.loginBox .cancel {
+    display: flex;
+    justify-content: end;
+    margin-right: 10px;
+    color: rgb(48,48,53);
+}
+
+.loginBox .cancel a{
+    text-decoration: none;
+}
+
+/* 标题 */
+.loginBox .login-title{
+    text-align: center;
+    font-size: 18px;
+    font-weight: bolder;
+    color: rgb(48,48,53);
+}
+
+/* 描述信息 */
+.loginBox .login-description{
+    width: 400px;
+    display: flex;
+    font-size: 14px;
+    zoom: 0.83;
+    margin: 10px auto;
+    margin-bottom: 10px;
+}
+.loginBox .login-description .middle{
+    margin: 0 18px;
+}
+
+/* 登录方式 */
+.loginBox .login-method{
+    width:350px;
+    height: 300px;
+    background-color: #fff;
+    margin: 0 auto;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.loginBox .login-method .method a:nth-child(2){
+    margin: 0 30px;
+}
+
+.loginBox .login-method .method a{
+    width: 90px;
+    height: 50px;
+    line-height: 50px;
+    display: inline-block;
+    color: rgb(22,24,35);
+    text-decoration: none;
+    border-bottom: 2px solid #fff;
+}
+
+.loginBox .login-method .method a:hover{
+    border-bottom: 2px solid red !important;
+}
+
+
+/* 扫码登录 */
+.loginBox .image{
+    display: none;
+}
+
+.loginBox .image img{
+    margin-top: 20px;
+    width: 150px;
+    height: 150px;
+}
+
+.loginBox .image .font{
+    margin-top: 20px;
+    font-size: 12px;
+    zoom: 0.83;
+    /* 字符之间的间距 */
+    letter-spacing: 3px;
+}
+
+.loginBox .image .font span{
+    color: red;
+    margin: auto 5px;
+}
+
+
+/* 账号密码登录 */
+.loginBox .phoneLogin{
+    display: none;
+    margin: 20px auto;
+    width: 250px;
+    height: 210px;
+    text-align: left;
+}
+
+/* 手机号和密码输入框 */
+.loginBox .phoneLogin .phone,
+.loginBox .phoneLogin .inputPassword,
+.loginBox .phoneLogin .login a{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 5px;
+}
+
+.loginBox .phoneLogin .phone,
+.loginBox .phoneLogin .inputPassword{
+    background-color: rgb(242,242,244);
+    margin: 20px auto;
+    font-size: 14px;
+    zoom: 0.9;
+}
+
+.loginBox .phoneLogin .phone input,
+.loginBox .phoneLogin .inputPassword input{
+    background: none;
+    border: none;
+    outline: none;
+    margin-left: 10px;
+}
+
+.loginBox .phoneLogin .phone span,
+.loginBox .phoneLogin .inputPassword span{
+    color: rgb(61,62,72);
+    margin-left: 10px;
+}
+
+.loginBox .phoneLogin .inputPassword span{
+    color: red;
+    margin-left: 20px;
+}
+
+/* 协议 */
+.loginBox .phoneLogin .agreement{
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    zoom: 0.9;
+    color: rgb(80,82,90);
+}
+
+.loginBox .phoneLogin .agreement a{
+    text-decoration: none;
+    margin: 0 5px;
+    color: rgb(80,82,90);
+}
+
+/* 登录按钮 */
+.loginBox .phoneLogin .login a{
+    display: inline-block;
+    background-color: rgb(255,194,198);
+    text-decoration: none;
+    color: #FFF;
+    font-weight: bold;
+    text-align: center;
+}
