@@ -28,6 +28,19 @@ main .navigation-left form{
     font-size: 16px;
     text-align: center;
     font-weight: bold;
+    /* 开启滚动 */
+    overflow-y: scroll;
+}
+
+/* 隐藏滚动条 */
+.side::-webkit-scrollbar {  
+    width:0 !important;  
+    background: transparent;  
+}
+
+/* 设置盒子高度 */
+.side .side_context{
+    height: 1000px;
 }
 
 .side a{
