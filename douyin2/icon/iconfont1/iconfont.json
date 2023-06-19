@@ -6,27 +6,6 @@
   "description": "",
   "glyphs": [
     {
-      "icon_id": "111904",
-      "name": "五角星",
-      "font_class": "star",
-      "unicode": "e61b",
-      "unicode_decimal": 58907
-    },
-    {
-      "icon_id": "749768",
-      "name": "登陆",
-      "font_class": "denglu",
-      "unicode": "e606",
-      "unicode_decimal": 58886
-    },
-    {
-      "icon_id": "7903670",
-      "name": "通知",
-      "font_class": "tongzhi",
-      "unicode": "e728",
-      "unicode_decimal": 59176
-    },
-    {
       "icon_id": "34064566",
       "name": "抖音",
       "font_class": "douyin",

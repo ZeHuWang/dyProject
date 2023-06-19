@@ -163,7 +163,7 @@ nav .options .unit a:hover > .icon,
 nav .options .unit a:hover > .font{
     color: #FFF;
 }
-.unit text{
+nav .unit text{
     color: rgb(132,132,139);
 }
 /* 图标颜色 */

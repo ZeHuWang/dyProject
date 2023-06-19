@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>HTML抖音页面</title>
@@ -8,11 +9,14 @@
     <!-- 总体与左侧css样式 -->
     <link rel="stylesheet" href="./css/left.css">
     <!-- 网页主题css样式 -->
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <!-- 视频内容样式 -->
+    <link rel="stylesheet" href="./css/article.css">
     <!-- 图标样式 -->
     <link rel="stylesheet" href="./icon/iconfont/iconfont.css">
-    
+
 </head>
+
 <body>
     <!-- 左侧侧边栏 -->
     <aside class="side">
@@ -27,96 +31,96 @@
             <div class="left-top">
                 <a class="unit">
                     <div>
-                        <text  class="iconfont icon-shouye" ></text>
+                        <text class="iconfont icon-shouye"></text>
                         <span class="font">首页</span>
                     </div>
                 </a>
                 <a class="unit">
                     <div>
-                        <text  class="iconfont icon-tuijian" ></text>
+                        <text class="iconfont icon-tuijian"></text>
                         <span class="font">推荐</span>
                     </div>
                 </a>
                 <a class="unit">
                     <div>
-                        <text  class="iconfont icon-guanzhu" ></text>
+                        <text class="iconfont icon-guanzhu"></text>
                         <span class="font">关注</span>
                     </div>
                 </a>
                 <a class="unit">
                     <div>
-                        <text  class="iconfont icon-pengyou" ></text>
+                        <text class="iconfont icon-pengyou"></text>
                         <span class="font">朋友</span>
                     </div>
                 </a>
                 <a class="unit">
                     <div>
-                        <text  class="iconfont icon-wode" ></text>
+                        <text class="iconfont icon-wode"></text>
                         <span class="font">我的</span>
                     </div>
                 </a>
             </div>
-        
+
             <div class="line"></div>
             <!-- 左侧底部图标 -->
             <div class="left-bottom">
                 <a class="unit">
                     <div>
-                        <text  class="iconfont icon-sheyingji" ></text>
+                        <text class="iconfont icon-sheyingji"></text>
                         <span class="font">直播</span>
                     </div>
                 </a>
                 <a class="unit">
                     <div>
-                        <text  class="iconfont icon-tv" ></text>
+                        <text class="iconfont icon-tv"></text>
                         <span class="font">放映厅</span>
                     </div>
                 </a>
                 <a class="unit">
                     <div>
-                        <text  class="iconfont icon-redian" ></text>
+                        <text class="iconfont icon-redian"></text>
                         <span class="font">热点</span>
                     </div>
                 </a>
                 <a class="unit">
                     <div>
-                        <text  class="iconfont icon-airudiantubiaohuizhi-zhuanqu_youxi" ></text>
+                        <text class="iconfont icon-airudiantubiaohuizhi-zhuanqu_youxi"></text>
                         <span class="font">游戏</span>
                     </div>
                 </a>
                 <a class="unit">
                     <div>
-                        <text  class="iconfont icon-xiaolian" ></text>
+                        <text class="iconfont icon-xiaolian"></text>
                         <span class="font">娱乐</span>
                     </div>
                 </a>
                 <a class="unit">
                     <div>
-                        <text  class="iconfont icon-erciyuan" ></text>
+                        <text class="iconfont icon-erciyuan"></text>
                         <span class="font">二次元</span>
                     </div>
                 </a>
                 <a class="unit">
                     <div>
-                        <text  class="iconfont icon-yinle" ></text>
+                        <text class="iconfont icon-yinle"></text>
                         <span class="font">音乐</span>
                     </div>
                 </a>
                 <a class="unit">
                     <div>
-                        <text  class="iconfont icon-meishi" ></text>
+                        <text class="iconfont icon-meishi"></text>
                         <span class="font">美食</span>
                     </div>
                 </a>
                 <a class="unit">
                     <div>
-                        <text  class="iconfont icon-airudiantubiaohuizhi-zhuanqu_tiyushijie" ></text>
+                        <text class="iconfont icon-airudiantubiaohuizhi-zhuanqu_tiyushijie"></text>
                         <span class="font">体育</span>
                     </div>
                 </a>
                 <a class="unit">
                     <div>
-                        <text  class="iconfont icon-fushishishang" ></text>
+                        <text class="iconfont icon-fushishishang"></text>
                         <span class="font">时尚</span>
                     </div>
                 </a>
@@ -152,7 +156,7 @@
                                     <p class="options">广末凉子承认出轨</p>
                                     <p class="options">汪小菲暴瘦引担忧</p>
                                 </div>
-                            </div> 
+                            </div>
                         </div>
                         <div class="hot">
                             <div class="title">抖音热点</div>
@@ -201,7 +205,7 @@
                     </div>
                     <div class="unit">
                         <a href="#">
-                            <text class="iconfont icon-doubi2x"></text>
+                            <text class="iconfont icon-tongzhi"></text>
                             <div class="font">通知</div>
                         </a>
                     </div>
@@ -223,7 +227,7 @@
             <div class="nav-right">
                 <div class="login">
                     <a href="#" id="login">
-                        <text class="iconfont icon-doubi2x"></text>
+                        <text class="iconfont icon-denglu"></text>
                         <span class="font">登录</span>
                     </a>
                 </div>
@@ -231,8 +235,85 @@
         </nav>
         <!-- 中间内容 -->
         <article>
+            <!-- 视频内容 -->
+            <div class="video">
+                <video width="320" height="240" controls>
+                    <source src="./video/justnow.mp4" type="video/mp4">
+                    <object data="./video/justnow.mp4" width="320" height="240">
+                    </object>
+                </video>
+            </div>
+            <!-- 互动区 -->
+            <div class="interaction-area">
+                <div class="unit">
+                    <a class="#">
+                        <text class="iconfont icon-xiai" id="xiai"></text>
+                        <div>16.1万</div>
+                    </a>
+                </div>
+                <div class="unit">
+                    <text class="iconfont icon-pinglun"></text>
+                    <div>5404</div>
+                </div>
+                <div class="unit">
+                    <a class="#">
+                        <text class="iconfont icon-star" id="collect"></text>
+                        <div>7859</div>
+                    </a>
+                </div>
+                <div class="unit">
+                    <text class="iconfont icon-arrow-" ></text>
+                    <div>4093</div>
+                </div>
+                <div class="unit">
+                    <text class="iconfont icon-gengduo"></text>
+                </div>
+            </div>
+            <script  type="text/javascript">
+                 // 获取点赞图标元素
+                let xiai = document.getElementById('xiai');
+                // 获取其颜色样式
+                let style = window.getComputedStyle(xiai);
+                // 默认为激活
+                let xiaiActive = true
+                // 若不为激活，则改为未激活
+                if(style.color === 'rgb(255, 255, 255)'){
+                    xiaiActive = false
+                }
+                xiai.onclick = function(){
+                    if (xiaiActive){
+                        xiai.style.color = 'rgb(255,255,255)';
+                        xiaiActive = false
+                    } else{
+                        xiai.style.color = 'rgb(223,43,79)';
+                        xiaiActive = true
+                    }
+                }
             
+                // 获取收藏图标元素
+                let collect = document.getElementById('collect');
+                // 获取其颜色样式
+                let collectStyle = window.getComputedStyle(collect);
+                // 默认为激活
+                let collectActive = true
+                // 若不为激活，则改为未激活
+                if(collectStyle.color === 'rgb(255, 255, 255)'){
+                    collectActive = false
+                }
+                collect.onclick = function(){
+                    if (!collectActive){
+                        // 未激活
+                        collect.style.color = 'orange';
+                        collectActive = true
+                    } else{
+                        // 激活
+                        collect.style.color = 'rgb(255,255,255)';
+                        collectActive = false
+                    }
+                }
+            </script>
         </article>
     </main>
 </body>
+
 </html>

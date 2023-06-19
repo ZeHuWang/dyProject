@@ -1,0 +1,28 @@
+article{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.video{
+    width: 100%;
+}
+video{
+    width: 100%;
+    height: auto;
+}
+.interaction-area{
+    position:absolute;
+    left: 1250px;
+    z-index: 99;
+}
+article .interaction-area{
+    color: #fff;
+}
+.interaction-area .unit{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.interaction-area .unit text{
+    font-size:30px!important;
+}
