@@ -82,3 +82,41 @@ aside .line{
     background-color: rgba(128, 128, 128, 0.3);
     margin: 20px auto;
 }
+
+.side .licence{
+    margin-top: 100px;
+}
+
+.side .licence,
+.side .net-inform{
+    width: 150px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.side .licence  a,
+.side .net-inform a{
+    font-size: 12px;
+    zoom: 0.83;
+    font-weight: 100;
+    text-align: left;
+    justify-content: left;
+    margin-top: 5px;
+    color: rgba(128, 128, 128, 0.5);
+}
+
+.side .line{
+    width: 150px;
+    height: 1px;
+    border: 1px;
+    background-color: rgba(128, 128, 128, 0.3);
+    margin: 10px 20px;
+}
+
+.side .feedback{
+    display: flex;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+
